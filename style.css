@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+#network {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  transform: translate(-50%, -50%);
+  z-index: 0; /* Sous le texte et le logo */
+  opacity: 0;
+  transition: opacity 1.2s ease;
+  pointer-events: none;
+}
+
+.logo-container:hover ~ #network {
+  opacity: 1;
+}
+
+h1 {
+  z-index: 2;
+  font-size: 2.5rem;
+  text-shadow: 0 0 10px rgba(255,255,255,0.3);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.logo-container {
+  z-index: 2;
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.logo-container:hover {
+  transform: scale(1.1);
+}
+
+.logo-container:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 12px #00d0ff) drop-shadow(0 0 24px #00d0ff);
+    z-index: 2;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  cursor: pointer;
+}
