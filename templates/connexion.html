@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Connexion - NEXUS</title>
+  <link rel="stylesheet" href="connexion.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h2 id="form-title">Connexion</h2>
+
+    <form id="login-form">
+      <input type="text" id="username" placeholder="Nom d'utilisateur" required />
+      <input type="password" id="password" placeholder="Mot de passe" required />
+
+      <button type="submit" id="submit-btn">Se connecter</button>
+    </form>
+
+    <p id="toggle-text">
+      Pas encore de compte ? <a href="#" id="toggle-link">Créer un compte</a>
+    </p>
+
+    <p id="message"></p>
+  </div>
+
+  <script src="connexion.js"></script>
+</body>
+</html>
