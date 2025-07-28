@@ -103,3 +103,32 @@ a.button:hover {
 .galerie-grid img:hover {
   transform: scale(1.05);
 }
+
+
+
+.nexus-chip-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #ffffff 30%, #d9f8ff 100%);
+  border: 2px solid #00ffff;
+  box-shadow: 0 0 8px #00ffff88, inset 0 0 4px #00ffff66;
+  color: #00cccc;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  line-height: 80px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.nexus-chip-button:hover {
+  background: radial-gradient(circle at center, #e0ffff 20%, #c0f0ff 100%);
+  box-shadow: 0 0 12px #00ffffaa, inset 0 0 6px #00ffff88;
+  color: #0088aa;
+  transform: scale(1.05);
+}
